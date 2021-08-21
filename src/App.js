@@ -2,16 +2,28 @@
 import Header from './components/Header';
 import CarouselHome from './components/CarouselHome'
 import Sectors from './components/Sectors';
-import Footer from './components/Footer';
+import Add from './components/Add';
+import Footer from './components/Footer'
+import {BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <CarouselHome/>
-      <Sectors/>
-    
-    </div>
+    <Router>
+      <div className ="app">
+        <Header/> 
+        <div className="content">
+          <Switch>
+            <Route path="/">
+              <CarouselHome/>
+              <Sectors/>
+            </Route>
+            <Route exact path="/Add">
+             <Add/>
+            </Route>
+          </Switch>
+        </div>
+     </div>
+    </Router>
   );
 }
 
