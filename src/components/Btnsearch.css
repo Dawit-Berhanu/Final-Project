@@ -1,0 +1,22 @@
+.sbtn{
+    width: 50%;
+    margin-left: 25%;
+}
+#form{
+    border: 2px solid rgb(102, 22, 112);
+    
+    display: inline;
+}
+
+a{
+    color: #fff;
+    
+}
+.btns{
+    
+    background-color:  rgb(102, 22, 112);
+    
+}
+#form:hover{
+    background-color: #fff;
+}
