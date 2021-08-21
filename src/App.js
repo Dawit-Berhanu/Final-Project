@@ -13,12 +13,15 @@ function App() {
         <Header/> 
         <div className="content">
           <Switch>
-            <Route path="/">
+            <Route exact path="/App">
               <CarouselHome/>
               <Sectors/>
             </Route>
-            <Route exact path="/Add">
+            <Route  path="/Add">
              <Add/>
+            </Route>
+            <Route path="/Sectors">
+              <Sectors/>
             </Route>
           </Switch>
         </div>

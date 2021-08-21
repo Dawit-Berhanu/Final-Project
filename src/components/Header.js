@@ -1,5 +1,6 @@
 import React from 'react'
 import navbar from './navbar.css'
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -8,11 +9,20 @@ const Header = () => {
                 <div className="brandName"><h2>Minister of Agriculture</h2></div>
                 <nav className="navbar">
                     <ul>
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>Sectors</a></li>
-                        <li><a href='#'>View Report</a></li>
-                        <li><a href='#'>Account</a></li>
-                        <li><a href='#'>About</a></li>
+                        <li><Link to='App'>Home</Link></li>
+                         <div className="dropdown">
+                             <button className="dropbtn"><li><Link to='Sectors' >Sectors</Link></li></button>
+                             <div className="dropdown-content">
+
+                                 <Link to=''>Natural resource</Link>
+                                 <Link to=''> Farming development</Link>
+                                 <Link to=''>agricultural input</Link>
+                                 <Link to=''>LiveStock resource</Link>
+                             </div>
+                         </div>
+                        <li><Link to='#'>View Report</Link></li>
+                        <li><Link to='#'>Account</Link></li>
+                        <li><Link to='#'>About</Link></li>
                     </ul>
                 </nav>
             </div>
