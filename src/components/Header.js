@@ -1,6 +1,7 @@
 import React from 'react'
 import navbar from './navbar.css'
 import {Link} from 'react-router-dom';
+import Natural_resource from './Sector/Natural_resource';
 
 const Header = () => {
     return (
@@ -14,7 +15,7 @@ const Header = () => {
                              <button className="dropbtn"><li><Link to='Sectors' >Sectors</Link></li></button>
                              <div className="dropdown-content">
 
-                                 <Link to=''>Natural resource</Link>
+                                 <Link to='Natural_resource'>Natural resource</Link>
                                  <Link to=''> Farming development</Link>
                                  <Link to=''>agricultural input</Link>
                                  <Link to=''>LiveStock resource</Link>
